@@ -6,6 +6,7 @@ import BarsIcon from "../../public/bars_icon.webp";
 import CalendarIcon from "../../public/calendar_icon.webp";
 import ClockIcon from "../../public/clock_icon.webp";
 import VenueIcon from "../../public/venue_icon.webp";
+import AlexProfile from "../../public/alex_profile.webp";
 
 export default function InfoTabComp() {
   return (
@@ -32,6 +33,8 @@ export default function InfoTabComp() {
                 <h1 className='text-[#4A4A4A] text-2xl font-normal leading-10'>Beginner</h1>
             </div>
         </div>
+
+        {/* ABOUT THIS EVENT */}
         <div className="w-full h-full flex flex-col gap-10 py-15 border-b-1 border-deep-light-gray">
             <h2 className="text-[32px] font-bold leading-7 text-tertiary-night-black">About this event</h2>
             <div className="flex flex-col gap-3">
@@ -39,6 +42,8 @@ export default function InfoTabComp() {
                 <Link href="#" className="text-primary-blue text-base font-normal leading-6 cursor-pointer underline underline-offset-4">Read more</Link>
             </div>
         </div>
+
+        {/* LOCATION */}
         <div className="w-full h-full flex flex-col gap-10 py-15 border-b-1 border-deep-light-gray">
             <h2 className="text-[32px] font-bold leading-7 text-tertiary-night-black">Location</h2>
             <div className="flex justify-between items-start gap-3">
@@ -52,6 +57,7 @@ export default function InfoTabComp() {
             </div>
         </div>
 
+        {/* GOOD TO KNOW */}
         <div className="w-full h-full flex flex-col gap-8 py-15 border-b-1 border-deep-light-gray">
             <h2 className="text-[32px] font-bold leading-7 text-tertiary-night-black">Good to know</h2>
             <div className="flex gap-3">
@@ -89,7 +95,7 @@ export default function InfoTabComp() {
                 {/* GREEN SECTION */}
                 <div className="pl-6 pr-[34px] py-6 bg-secondary-pure-green rounded-2xl flex flex-col gap-4">
                     <h1 className="text-2xl font-medium text-offwhite">Refund & cancellation policy</h1>
-                    <ul className="list-disc list-inside text-[18px] font-medium text-offwhite">
+                    <ul className="list-disc list-inside text-[18px] font-medium text-offwhite flex flex-col gap-[6px]">
                         <li>Full refund if host cancels the game</li>
                         <li>Full refund if you cancel 24+ hours in advance </li>
                         <li>Full refund if game is cancelled due to low attendance</li>
@@ -98,6 +104,39 @@ export default function InfoTabComp() {
                         <h1 className="text-base font-normal text-white">Learn More</h1>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        {/* HOSTED BY */}
+        <div className="w-full h-full flex flex-col gap-8 py-15 border-b-1 border-deep-light-gray">
+            <h2 className="text-[32px] font-bold leading-7 text-tertiary-night-black">Hosted by</h2>
+            <div className="flex justify-between items-center px-6 py-[27px] bg-secondary-gray-blue rounded-2xl">
+                <div className="flex justify-start items-center gap-6">
+                    <div className="size-24 flex justify-center items-center rounded-full overflow-hidden relative">
+                        <Image src={AlexProfile} alt="alex" className='object-contain '/>
+                    </div>
+                    <div className="flex flex-col gap-[6px]">
+                        <h2 className="text-2xl font-bold leading[22px] text-white">Alex Mercer</h2>
+                        <div>
+                            <div className="flex gap-1">
+                                <p className="text-base font-medium leading-[22px] text-white">23</p>
+                                <p className="text-base font-normal leading-[22px] text-tertiary-light-gray">activies found</p>
+                            </div>
+                            <div className="flex gap-1">
+                                <p className="text-base font-medium leading-[22px] text-white">4.5</p>
+                                <p className="text-base font-normal leading-[22px] text-tertiary-light-gray">host rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex gap-4">
+                    <button className="px-[27px] py-[10px] bg-tertiary-light-apricot rounded-full text-base font-medium leading-[22px] text-tertiary-night-black">
+                        Message
+                    </button>
+                    <button className="px-[27px] py-[10px] border-1 border-tertiary-light-apricot rounded-full text-base font-medium leading-[22px] text-tertiary-light-apricot">
+                        View profile
+                    </button>
                 </div>
             </div>
         </div>
