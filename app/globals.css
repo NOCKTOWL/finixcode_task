@@ -8,12 +8,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-offwhite: #f7f7f7;
   --color-tertiary-night-black: #171717;
   --color-deep-light-gray: #e5e5e5;
   --color-tertiary-light-gray: #f6f6f6;
   --color-light-yellow: #f4f5ef;
   --color-secondary-pure-green: #34735f;
   --color-secondary-terra-cotta: #da6049;
+  --color-primary-blue: #0096ed;
+  --color-secondary-gray-blue: #4e566b;
+  --color-swimming-blue: #e6f8f8;
   --color-jithbo-green: #63cfa0;
   --color-deep-light-gray: #e5e5e5;
   --font-satoshi: var(--font-satoshi);
