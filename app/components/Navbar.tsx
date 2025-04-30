@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='flex justify-between items-center h-[84px] w-full top-0 px-4 py-10'>
+    <div className='flex justify-between items-center h-[84px] w-full top-0 px-10 py-4 bg-white'>
         {/* LOGO */}
 
         <Link href="/" className="flex items-center justify-center gap-2">
