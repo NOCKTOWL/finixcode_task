@@ -5,13 +5,18 @@ import Image from "next/image";
 import InfoTabComp from "./InfoTabComp";
 import PlayerTabComponent from "./PlayerTabComp";
 import CommentsTabComponent from "./CommentsTabComp";
+import PaymentMethodModal from "./PaymentMethodModal";
 import ShareIcon from "../../public/share_icon.webp";
 import HeartIcon from "../../public/heart_icon.webp";
+import HeartActiveIcon from "../../public/heartactive_icon.webp";
 import DotMenu from "../../public/dotmenu_icon.svg";
 
 function EventDetails() {
+    const [isHeartActive, setIsHeartActive] = useState(false);
     const [activeTab, setActiveTab] = useState<'info' | 'player' | 'comments'>('info');
-    
+    const [isPaymentMethodModalOpen, setIsPaymentMethodModalOpen] = useState(false);
+
+
     return (
         <div className='w-full px-10 pt-10 flex justify-center items-center'>
             <div className='grid grid-cols-6 w-340'>
@@ -35,12 +40,12 @@ function EventDetails() {
                             </div>
                             <div className="flex justify-center items-center p-2 bg-tertiary-light-gray border-[1.18px] border-deep-light-gray rounded-full">
                                 <div className='size-[26px] flex justify-center items-center'>
-                                    <Image src={HeartIcon} alt="share" />
+                                    <Image src={isHeartActive ? HeartActiveIcon : HeartIcon} alt="heart" onClick={() => setIsHeartActive(!isHeartActive)} className="cursor-pointer"/>
                                 </div>
                             </div>
                             <div className="flex justify-center items-center">
                                 <div className='size-[26px] flex justify-center items-center'>
-                                    <Image src={DotMenu} alt="share" />
+                                    <Image src={DotMenu} alt="dot_menu" />
                                 </div>
                             </div>
                         </div>
@@ -74,10 +79,17 @@ function EventDetails() {
                                 </div>
                             </div>
                         </form>
-                        <button type='submit' form='spotsform' className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] tracking-[0.2px]'>Join event</button>
+                        <button
+                            onClick={() => setIsPaymentMethodModalOpen(!isPaymentMethodModalOpen)} type='submit'
+                            // form='spotsform' COMMENTED OUT FOR PAYMENT METHOD MODAL
+                            className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] tracking-[0.2px] cursor-pointer'
+                        >
+                            Join event
+                        </button>
                     </div>
                 </div>
             </div>
+            {isPaymentMethodModalOpen && <PaymentMethodModal modalStatus={setIsPaymentMethodModalOpen} />}
         </div>
     )
 }
