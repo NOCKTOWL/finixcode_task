@@ -7,16 +7,16 @@ import PlayerTabComponent from "./PlayerTabComp";
 import CommentsTabComponent from "./CommentsTabComp";
 import ShareIcon from "../../public/share_icon.webp";
 import HeartIcon from "../../public/heart_icon.webp";
-import DotMenu from "../../public/dotmenu_icon.webp";
+import DotMenu from "../../public/dotmenu_icon.svg";
 
 function EventDetails() {
     const [activeTab, setActiveTab] = useState<'info' | 'player' | 'comments'>('info');
     
     return (
         <div className='w-full px-10 pt-10 flex justify-center items-center'>
-            <div className='grid grid-cols-6  w-340'>
+            <div className='grid grid-cols-6 w-340'>
                 {/* LEFT TITLE LOCATION COLUMN */}
-                <div className='col-span-4 w-full flex flex-col'>
+                <div className='col-span-4 w-full flex flex-col pb-15'>
                     <div className="w-full flex justify-between items-start">
                         <div className='flex flex-col gap-3'>
                             <h1 className='text-5xl text-tertiary-night-black font-black leading-16'>Road to the Football Finals</h1>

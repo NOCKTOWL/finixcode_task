@@ -109,7 +109,7 @@ export default function InfoTabComp() {
         </div>
 
         {/* HOSTED BY */}
-        <div className="w-full h-full flex flex-col gap-8 py-15 border-b-1 border-deep-light-gray">
+        <div className="w-full h-full flex flex-col gap-8 py-15">
             <h2 className="text-[32px] font-bold leading-7 text-tertiary-night-black">Hosted by</h2>
             <div className="flex justify-between items-center px-6 py-[27px] bg-secondary-gray-blue rounded-2xl">
                 <div className="flex justify-start items-center gap-6">

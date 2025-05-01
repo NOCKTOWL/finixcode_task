@@ -5,6 +5,24 @@
   --foreground: #171717;
 }
 
+@layer utilities {
+  .custom-dashed-border {
+    border-width: 0 0 0 1.2px;
+    border-style: solid;
+    border-image: repeating-linear-gradient(
+        to bottom,
+        #e5e5e5 0,
+        #e5e5e5 10px,
+        transparent 10px,
+        transparent 30px,
+        #e5e5e5 30px,
+        #e5e5e5 40px
+      )
+      100% 1;
+    border-image-slice: 1;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
