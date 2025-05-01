@@ -32,7 +32,7 @@ export default function PaymentMethodModal({ modalStatus }: { modalStatus: (stat
                     <div className='flex flex-col'>
                         <div className='flex justify-start items-start gap-[14px]'>
                             <div className='size-7 flex justify-center items-center'>
-                                <input type="radio" />
+                                <input type="radio" name='radio-group' />
                             </div>
                             <div className='flex flex-col'>
                                 <div className='flex justify-start items-center gap-2'>
@@ -51,7 +51,7 @@ export default function PaymentMethodModal({ modalStatus }: { modalStatus: (stat
                     <div className='flex flex-col'>
                         <div className='flex justify-start items-start gap-[14px]'>
                             <div className='size-7 flex justify-center items-center'>
-                                <input type="radio" />
+                                <input type="radio" name='radio-group' />
                             </div>
                             <div className='flex flex-col'>
                                 <div className='flex justify-start items-center gap-2'>
