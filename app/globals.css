@@ -21,6 +21,35 @@
       100% 1;
     border-image-slice: 1;
   }
+
+  .custom-radio-button {
+    appearance: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-offwhite);
+    border: 2px solid #d4d4d4;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:checked {
+      background-color: white;
+    }
+    &:checked::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: var(--color-jithbo-green);
+    }
+    &:checked {
+      border: 2px solid var(--color-jithbo-green);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @theme inline {

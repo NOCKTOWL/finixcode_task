@@ -1,15 +1,17 @@
 "use client"
 
-import React from 'react'
-import Logo from "@/public/Logo.webp"
+import { useState } from "react"
+import Logo from "@/public/Logo.svg"
+import CalendarIcon from "@/public/calendarblack_icon.svg"
 import Search from "@/public/Search_Icon.webp"
-import Leaderboard from "@/public/leaderboard_icon.webp"
-import Hamburger from "@/public/hamburger_icon.webp"
-import Profile from "@/public/profile_icon.webp"
+import Leaderboard from "@/public/leaderboard_icon.svg"
+import Hamburger from "@/public/hamburger_icon.svg"
+import Profile from "@/public/profile_icon.svg"
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Navbar() {
+    const [pickedDate, setPickedDate] = useState("Select Date")
   return (
     <div className='flex justify-between items-center h-[84px] w-full top-0 px-10 py-4 bg-white'>
         {/* LOGO */}
@@ -21,12 +23,21 @@ export default function Navbar() {
         {/* DATE AND SEARCH FIELD */}
 
         <div className='flex justify-between gap-2'>
-            <input type="date" className='w-[260px] border-[1px] border-tertiary-light-gray px-2 pr-2 pl-4 outline-none' />
-             
-            <div className='relative flex justify-between w-65 h-13 pl-4 pr-2 py-2 border-1 border-tertiary-light-gray rounded-[99px]'>
-                <input type="text" placeholder='Search' className='placeholder:text-[#6A6A6A] text-sm outline-none'/>
+
+            {/* DATE PICKER INPUT */}
+            <div className='relative flex justify-between w-65 h-13 pl-4 pr-2 py-2 border-1 border-tertiary-light-gray rounded-[99px] [box-shadow:0px_3px_8px_rgba(0,0,0,0.1)]'>
+                <input id="datepicker" onChange={(e)=>setPickedDate(e.target.value)} value={pickedDate} type="date" className='z-10 opacity-0 absolute inset-0 w-[260px] p-4 outline-none cursor-pointer '/>
+                <label htmlFor="datepicker" className='z-0 w-[260px] flex justify-start items-center text-[#6A6A6A] text-sm font-normal outline-none cursor-pointer'>{pickedDate}</label>
+                <div className='absolute top-1/2 right-2 -translate-y-1/2 bg-jithbo-green rounded-full p-[7px] hover:brightness-95 transition-all duration-300 ease-in-out pointer-events-none cursor-pointer'>
+                    <Image src={CalendarIcon} alt="Calendar-Icon" className='text-black ' />
+                </div>
+            </div>
+
+            {/* SEARCH BAR INPUT */}
+            <div className='relative flex justify-between w-65 h-13 pl-4 pr-2 py-2 border-1 border-tertiary-light-gray rounded-[99px] [box-shadow:0px_3px_8px_rgba(0,0,0,0.1)]'>
+                <input type="text" placeholder='Search' className='placeholder:text-[#6A6A6A] text-[#6A6A6A] text-sm font-normal outline-none'/>
                 <div className='absolute top-1/2 right-2 -translate-y-1/2 bg-deep-light-gray rounded-full p-[7px] cursor-pointer hover:brightness-95 transition-all duration-300 ease-in-out'>
-                    <Image src={Search} alt="Search" className='flex' />
+                    <Image src={Search} alt="Search-Icon" />
                 </div>
             </div>
         </div>

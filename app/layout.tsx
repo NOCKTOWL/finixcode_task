@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "FinixCode Test",
   description: "FinixCode Test",
   icons: {
-    icon: "Logo.webp",
+    icon: "Logo.svg",
     
   },
 };

@@ -6,9 +6,9 @@ import InfoTabComp from "./InfoTabComp";
 import PlayerTabComponent from "./PlayerTabComp";
 import CommentsTabComponent from "./CommentsTabComp";
 import PaymentMethodModal from "./PaymentMethodModal";
-import ShareIcon from "../../public/share_icon.webp";
-import HeartIcon from "../../public/heart_icon.webp";
-import HeartActiveIcon from "../../public/heartactive_icon.webp";
+import ShareIcon from "../../public/share_icon.svg";
+import HeartIcon from "../../public/heart_icon.svg";
+import HeartActiveIcon from "../../public/heartactive_icon.svg";
 import DotMenu from "../../public/dotmenu_icon.svg";
 
 function EventDetails() {
@@ -23,24 +23,23 @@ function EventDetails() {
                 {/* LEFT TITLE LOCATION COLUMN */}
                 <div className='col-span-4 w-full flex flex-col pb-15'>
                     <div className="w-full flex justify-between items-start">
-                        <div className='flex flex-col gap-3'>
+                        <div className='flex flex-col gap-3 pb-14'>
                             <h1 className='text-5xl text-tertiary-night-black font-black leading-16'>Road to the Football Finals</h1>
                             <div className='flex flex-col gap-4'>
-                                <h2 className='text-2xl text-[#4A4A4A] font-normal leading-6'>Bashundhara Sports Complex</h2>
-                                <h2 className='text-2xl text-[#4A4A4A] font-normal leading-6'>Mar 14 from 7:30 PM - 9:30 PM</h2>
+                                <h2 className='text-2xl text-[#4A4A4A] font-normal leading-[22px]'>Bashundhara Sports Complex</h2>
+                                <h2 className='text-2xl text-[#4A4A4A] font-normal leading-[22px]'>Mar 14 from 7:30 PM - 9:30 PM</h2>
                             </div>
                         </div>
 
                         <div className="flex gap-4 h-max">
                             <div className="flex justify-center items-center p-2 bg-tertiary-light-gray border-[1.18px] border-deep-light-gray rounded-full">
                                 <div className='size-[26px] flex justify-center items-center'>
-                                    {/* <Image src="/share_icon.webp" alt="share" width={18} height={18}/> */}
                                     <Image src={ShareIcon} alt="share" />
                                 </div>
                             </div>
                             <div className="flex justify-center items-center p-2 bg-tertiary-light-gray border-[1.18px] border-deep-light-gray rounded-full">
                                 <div className='size-[26px] flex justify-center items-center'>
-                                    <Image src={isHeartActive ? HeartActiveIcon : HeartIcon} alt="heart" onClick={() => setIsHeartActive(!isHeartActive)} className="cursor-pointer"/>
+                                    <Image src={isHeartActive ? HeartActiveIcon : HeartIcon} alt="heart" onClick={() => setIsHeartActive(!isHeartActive)} className="cursor-pointer drop-shadow-[0px_1.18px_2.35px_rgba(0,0,0,0.1)]"/>
                                 </div>
                             </div>
                             <div className="flex justify-center items-center">
@@ -74,15 +73,15 @@ function EventDetails() {
                         <form id="spotsform" action="" className='flex flex-col gap-4 w-full'>
                             <div className='px-4 py-[18px] rounded-2xl border-1 border-deep-light-gray'>
                                 <div className='flex justify-between items-center gap-1'> 
-                                    <h1 className='text-base font-medium text-secondary-terra-cotta'>6 spots left</h1>
-                                    <h1 className='text-[18px] font-bold text-[#171717]'>320tk /player <span className='font-normal text-[14px] text-[#808080 ]'>(both)</span></h1>
+                                    <h1 className='text-base font-medium text-secondary-terra-cotta leading-[100%]'>6 spots left</h1>
+                                    <h1 className='text-[18px] font-bold text-[#171717] leading-[100%]'>320tk /player <span className='font-normal text-[14px] text-[#808080]'>(both)</span></h1>
                                 </div>
                             </div>
                         </form>
                         <button
                             onClick={() => setIsPaymentMethodModalOpen(!isPaymentMethodModalOpen)} type='submit'
                             // form='spotsform' COMMENTED OUT FOR PAYMENT METHOD MODAL
-                            className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] tracking-[0.2px] cursor-pointer'
+                            className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] leading-[100%] tracking-[0.2px] cursor-pointer '
                         >
                             Join event
                         </button>
