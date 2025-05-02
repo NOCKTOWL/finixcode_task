@@ -11,16 +11,17 @@ import TakaIcon from "@/public/taka_icon.svg";
 
 export default function FooterCardComp({ image, title, date, startEndTime, location, spotsLeft, attending, price }: { image: string, title: string, date: string, startEndTime:string, location: string, spotsLeft: string, attending: string, price: string }) {
     const [isHeartActive, setIsHeartActive] = useState(false);
+    const [activeImageIndex, setActiveImageIndex] = useState(0);
     return (
         <div className="col-span-1 flex flex-col border-[1.25px] border-deep-light-gray rounded-[20px] overflow-hidden">
             {/* EVENT CARD THUMBNAIL */}
             <div className="relative h-29 w-full flex justify-center">
                 <Image src={image} alt="event image" fill className="object-cover" />
                 <div className='absolute bottom-0 flex justify-center items-center gap-2 px-[15px] py-[10px]'>
-                    <div className='rounded-full bg-tertiary-light-gray size-[7px]'></div>
-                    <div className='rounded-full bg-tertiary-light-gray/30 size-[7px]'></div>
-                    <div className='rounded-full bg-tertiary-light-gray/30 size-[7px]'></div>
-                    <div className='rounded-full bg-tertiary-light-gray/30 size-[7px]'></div>
+                <button onClick={() => setActiveImageIndex(0)} className={`rounded-full size-[7px] cursor-pointer ${activeImageIndex === 0 ? 'bg-tertiary-light-gray' : 'bg-tertiary-light-gray/30'}`}></button>
+                    <button onClick={() => setActiveImageIndex(1)} className={`rounded-full size-[7px] cursor-pointer ${activeImageIndex === 1 ? 'bg-tertiary-light-gray' : 'bg-tertiary-light-gray/30'}`}></button>
+                    <button onClick={() => setActiveImageIndex(2)} className={`rounded-full size-[7px] cursor-pointer ${activeImageIndex === 2 ? 'bg-tertiary-light-gray' : 'bg-tertiary-light-gray/30'}`}></button>
+                    <button onClick={() => setActiveImageIndex(3)} className={`rounded-full size-[7px] cursor-pointer ${activeImageIndex === 3 ? 'bg-tertiary-light-gray' : 'bg-tertiary-light-gray/30'}`}></button>
                 </div>
                 <div className="size-[30px] absolute top-4 left-80 xl:top-5 2xl:top-4 xl:left-[393px] 2xl:left-134">
                     <Image src={isHeartActive ? HeartActiveIcon : HeartIcon} alt="heart" onClick={() => setIsHeartActive(!isHeartActive)} fill className="object-cover cursor-pointer drop-shadow-[0px_1.18px_2.35px_rgba(0,0,0,0.1)]" />

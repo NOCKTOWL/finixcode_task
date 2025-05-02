@@ -3,7 +3,7 @@
 import Image from "next/image";
 import DotMenu from "../../public/dotmenu_icon.svg";
 import DotMenuGreen from "../../public/dotmenugreen_icon.svg";
-import ReplyIcon from "../../public/reply_icon.webp";
+import ReplyIcon from "../../public/reply_icon.svg";
 
 export default function CommentsTabComponent() {
   return (

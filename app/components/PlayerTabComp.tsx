@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import GroupIcon from '../../public/group_icon.webp'
+import GroupIcon from '../../public/group_icon.svg'
 
 export default function PlayerTabComponent() {
   return (
