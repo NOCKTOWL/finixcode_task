@@ -4,7 +4,7 @@ A frontend implementation of a sports event platform UI, created for a job appli
 
 ## Live Demo
 
-[View Live Demo](https://finixcode-task.vercel.app)
+[View Live Demo](https://finixcode-mhn.vercel.app)
 
 ## Project Overview
 
