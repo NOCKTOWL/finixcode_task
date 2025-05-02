@@ -45,19 +45,17 @@ export default function Footer() {
     return (
         <div className='w-full flex flex-col gap-3 justify-center items-center p-10 bg-white'>
             {/* TOP HALF */}
-            <div className="w-full flex gap-3">
-                <div className="w-full flex justify-between items-center">
-                    <h2 className='text-[#261B36] text-2xl font-bold leading-8'>Other events you may like</h2>
-                    <div className="flex gap-4">
-                        <div className="size-12 flex justify-center items-center bg-light-yellow rounded-full cursor-pointer hover:brightness-95 transition-all duration-300 ease-in-out">
-                            <div className="size-6 flex justify-center items-center ">
-                                <Image src={ChevronLeft} alt="chevron left"  />
-                            </div>
+            <div className="w-full flex justify-between items-center py-3">
+                <h2 className='text-[#261B36] text-2xl font-bold leading-8'>Other events you may like</h2>
+                <div className="flex gap-4">
+                    <div className="size-12 flex justify-center items-center bg-light-yellow rounded-full cursor-pointer hover:brightness-95 transition-all duration-300 ease-in-out">
+                        <div className="size-6 flex justify-center items-center ">
+                            <Image src={ChevronLeft} alt="chevron left"  />
                         </div>
-                        <div className="size-12 flex justify-center items-center bg-light-yellow rounded-full cursor-pointer hover:brightness-95 transition-all duration-300 ease-in-out">
-                            <div className="size-6 flex justify-center items-center ">
-                                <Image src={ChevronLeft} alt="chevron left" className='scale-x-[-1]' />
-                            </div>
+                    </div>
+                    <div className="size-12 flex justify-center items-center bg-light-yellow rounded-full cursor-pointer hover:brightness-95 transition-all duration-300 ease-in-out">
+                        <div className="size-6 flex justify-center items-center ">
+                            <Image src={ChevronLeft} alt="chevron left" className='scale-x-[-1]' />
                         </div>
                     </div>
                 </div>
