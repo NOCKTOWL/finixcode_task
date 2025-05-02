@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import BarsIcon from "../../public/bars_icon.svg";
-import CalendarIcon from "../../public/calendar_icon.svg";
-import ClockIcon from "../../public/clock_icon.svg";
-import VenueIcon from "../../public/venue_icon.svg";
+import BarsIcon from "../assets/icons/bars_icon.svg";
+import CalendarIcon from "../assets/icons/calendar_icon.svg";
+import ClockIcon from "../assets/icons/clock_icon.svg";
+import VenueIcon from "../assets/icons/venue_icon.svg";
 import AlexProfile from "../../public/alex_profile.svg";
 
 export default function InfoTabComp() {

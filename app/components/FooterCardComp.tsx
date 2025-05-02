@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import HeartIcon from "@/public/heart_icon.svg";
-import HeartActiveIcon from "@/public/heartactive_icon.svg";
-import BarsFullIcon from "@/public/barsfull_icon.svg";
-import LocationIcon from "@/public/location_icon.svg";
+import HeartIcon from "../assets/icons/heart_icon.svg";
+import HeartActiveIcon from "../assets/icons/heartactive_icon.svg";
+import BarsFullIcon from "../assets/icons/barsfull_icon.svg";
+import LocationIcon from "../assets/icons/location_icon.svg";
 import Ellipse from "@/public/ellipse.svg";
-import TakaIcon from "@/public/taka_icon.svg";
+import TakaIcon from "../assets/icons/taka_icon.svg";
 
 export default function FooterCardComp({ image, title, date, startEndTime, location, spotsLeft, attending, price }: { image: string, title: string, date: string, startEndTime:string, location: string, spotsLeft: string, attending: string, price: number }) {
     const [isHeartActive, setIsHeartActive] = useState(false);
@@ -91,4 +91,3 @@ export default function FooterCardComp({ image, title, date, startEndTime, locat
         </div>
     )
 }
- 
