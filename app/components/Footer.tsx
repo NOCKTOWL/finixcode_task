@@ -15,7 +15,7 @@ export default function Footer() {
             location: "Bashundhara Sports Complex",
             spotsLeft: "2 spots left",
             attending: "6/8 attending",
-            price: "320",
+            price: 320,
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ export default function Footer() {
             location: "Bashundhara Sports Complex",
             spotsLeft: "2 spots left",
             attending: "6/8 attending",
-            price: "320",
+            price: 320,
         },
         {
             id: 3,
@@ -37,7 +37,7 @@ export default function Footer() {
             location: "Bashundhara Sports Complex",
             spotsLeft: "2 spots left",
             attending: "6/8 attending",
-            price: "320",
+            price: 320,
         },
 
     ];

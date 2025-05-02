@@ -9,7 +9,7 @@ import LocationIcon from "@/public/location_icon.svg";
 import Ellipse from "@/public/ellipse.svg";
 import TakaIcon from "@/public/taka_icon.svg";
 
-export default function FooterCardComp({ image, title, date, startEndTime, location, spotsLeft, attending, price }: { image: string, title: string, date: string, startEndTime:string, location: string, spotsLeft: string, attending: string, price: string }) {
+export default function FooterCardComp({ image, title, date, startEndTime, location, spotsLeft, attending, price }: { image: string, title: string, date: string, startEndTime:string, location: string, spotsLeft: string, attending: string, price: number }) {
     const [isHeartActive, setIsHeartActive] = useState(false);
     const [activeImageIndex, setActiveImageIndex] = useState(0);
     return (
