@@ -30,7 +30,7 @@ export default function Footer() {
         },
         {
             id: 3,
-            image: "/event1.webp",
+            image: "/event1.svg",
             title: "United We Play, United Win",
             date: "Thu, Dec 5",
             startEndTime: "12:30 AM - 12:30 PM",
