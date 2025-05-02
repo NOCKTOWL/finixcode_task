@@ -189,7 +189,7 @@ export default function CommentsTabComponent() {
 
       {/* WRITE A COMMENT */}
       <div className="flex justify-center items-center p-6">
-        <input type="text" placeholder="Write a comment" className="w-full px-6 py-5 border-1 border-[#C0C0C0] rounded-full text-[18px] font-medium leading-[18px] text-[#]"/>
+        <input type="text" placeholder="Write a comment" className="w-full px-6 py-5 border-1 border-[#C0C0C0] rounded-full text-[18px] font-medium leading-[18px] text-[#808080] outline-none"/>
       </div>
     </div>
   )
