@@ -81,7 +81,7 @@ function EventDetails() {
                         <button
                             onClick={() => setIsPaymentMethodModalOpen(!isPaymentMethodModalOpen)} type='submit'
                             // form='spotsform' COMMENTED OUT FOR PAYMENT METHOD MODAL
-                            className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] leading-[100%] tracking-[0.2px] cursor-pointer '
+                            className='w-full bg-jithbo-green p-4 rounded-[99px] font-bold text-[18px] leading-[100%] tracking-[0.2px] cursor-pointer hover:brightness-90 transition-all duration-300 ease-in-out'
                         >
                             Join event
                         </button>

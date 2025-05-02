@@ -91,7 +91,7 @@ export default function InfoTabComp() {
                             <h1 className="text-[18px] font-medium text-offwhite leading-[100%]">Venue booked</h1>
                         </div>
                     </div>
-                </div>
+                </div> 
 
                 {/* GREEN SECTION */}
                 <div className="h-[250px] pl-6 pr-[34px] py-6 bg-secondary-pure-green rounded-2xl flex flex-col gap-4">
@@ -121,11 +121,11 @@ export default function InfoTabComp() {
                         <h2 className="text-2xl font-bold leading[22px] text-white">Alex Mercer</h2>
                         <div>
                             <div className="flex justify-start gap-1">
-                                <p className="text-base font-medium leading-[22px] text-white">23</p>
+                                <p className="w-6 text-base font-medium leading-[22px] text-white">23</p>
                                 <p className="text-base font-normal leading-[22px] text-tertiary-light-gray">activies found</p>
                             </div>
                             <div className="flex justify-start gap-1">
-                                <p className="text-base font-medium leading-[22px] text-white">4.5</p>
+                                <p className="w-6 text-base font-medium leading-[22px] text-white">4.5</p>
                                 <p className="text-base font-normal leading-[22px] text-tertiary-light-gray">host rating</p>
                             </div>
                         </div>
