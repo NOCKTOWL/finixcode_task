@@ -12,11 +12,9 @@
     border-image: repeating-linear-gradient(
         to bottom,
         #e5e5e5 0,
-        #e5e5e5 10px,
-        transparent 10px,
-        transparent 30px,
-        #e5e5e5 30px,
-        #e5e5e5 40px
+        #e5e5e5 22px,
+        transparent 22px,
+        transparent 40px
       )
       100% 1;
     border-image-slice: 1;

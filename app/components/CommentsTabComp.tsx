@@ -19,26 +19,26 @@ export default function CommentsTabComponent() {
                   <div className='size-10 bg-tertiary-light-apricot rounded-full flex justify-center items-center'>
                     <h2 className='uppercase text-[18px] font-bold text-secondary-pure-green leading-6'>AM</h2>
                   </div>
-                  <h1 className='text-2xl font-medium text-tertiary-light-apricot'>Alex Mercer</h1>
+                  <h1 className='text-2xl font-medium text-tertiary-light-apricot leading-[100%]'>Alex Mercer</h1>
                 </div>
                 
                 <div className='flex justify-between items-center gap-[14px]'>
-                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot">14 min</h2>
+                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot leading-[100%]">14 min</h2>
                   <div className='size-[22px] flex justify-center items-center'>
                       <Image src={DotMenu} alt="share" />
                   </div>
                 </div>
               </div>
               
-              <h2 className='text-xl font-normal text-white'>Looking forward to the game! What&apos;s the final player count?</h2>
+              <h2 className='text-xl font-normal text-white leading-[100%]'>Looking forward to the game! What&apos;s the final player count?</h2>
             </div>
 
             <div className="py-[2.4px]">
-              <button className="flex gap-2">
+              <button className="flex justify-center items-center gap-2">
                 <div className="size-[26px] flex justify-center items-center">
                   <Image src={ReplyIcon} alt="reply" />
                 </div>
-                <h2 className="text-[18px] font-medium text-[#808080]">Reply</h2>
+                <h2 className="text-[18px] font-medium text-[#808080] leading-[100%]">Reply</h2>
               </button>
             </div>  
           </div>
@@ -53,18 +53,18 @@ export default function CommentsTabComponent() {
                     <div className='size-10 bg-secondary-pure-green rounded-full flex justify-center items-center'>
                       <h2 className='uppercase text-[18px] font-bold text-tertiary-light-apricot leading-6'>RK</h2>
                     </div>
-                    <h1 className='text-2xl font-medium text-secondary-pure-green'>Rifat Khan</h1>
+                    <h1 className='text-2xl font-medium text-secondary-pure-green leading-[100%]'>Rifat Khan</h1>
                   </div>
                   
                   <div className='flex justify-between items-center gap-[14px]'>
-                    <h2 className="text-[18px] font-normal text-secondary-pure-green">14 min</h2>
+                    <h2 className="text-[18px] font-normal text-secondary-pure-green leading-[100%]">14 min</h2>
                     <div className='size-[22px] flex justify-center items-center' >
                         <Image src={DotMenuGreen} alt="share" />
                     </div>
                   </div>
                 </div>
                 
-                <h2 className='text-xl font-normal text-tertiary-night-black'>missing few players</h2>
+                <h2 className='text-xl font-normal text-tertiary-night-black leading-[100%]'>missing few players</h2>
               </div>
             </div>
             
@@ -75,18 +75,18 @@ export default function CommentsTabComponent() {
                     <div className='size-10 bg-secondary-pure-green rounded-full flex justify-center items-center'>
                       <h2 className='uppercase text-[18px] font-bold text-tertiary-light-apricot leading-6'>RK</h2>
                     </div>
-                    <h1 className='text-2xl font-medium text-secondary-pure-green'>Rifat Khan</h1>
+                    <h1 className='text-2xl font-medium text-secondary-pure-green leading-[100%]'>Rifat Khan</h1>
                   </div>
                   
                   <div className='flex justify-between items-center gap-[14px]'>
-                    <h2 className="text-[18px] font-normal text-secondary-pure-green">14 min</h2>
+                    <h2 className="text-[18px] font-normal text-secondary-pure-green leading-[100%]">14 min</h2>
                     <div className='size-[22px] flex justify-center items-center'>
                         <Image src={DotMenuGreen} alt="share" />
                     </div>
                   </div>
                 </div>
                 
-                <h2 className='text-xl font-normal text-tertiary-night-black'>got any friends?</h2>
+                <h2 className='text-xl font-normal text-tertiary-night-black leading-[100%]'>got any friends?</h2>
               </div>
             </div>
           </div>
@@ -101,26 +101,26 @@ export default function CommentsTabComponent() {
                   <div className='size-10 bg-tertiary-light-apricot rounded-full flex justify-center items-center'>
                     <h2 className='uppercase text-[18px] font-bold text-secondary-pure-green leading-6'>AM</h2>
                   </div>
-                  <h1 className='text-2xl font-medium text-tertiary-light-apricot'>Alex Mercer</h1>
+                  <h1 className='text-2xl font-medium text-tertiary-light-apricot leading-[100%]'>Alex Mercer</h1>
                 </div>
                 
                 <div className='flex justify-between items-center gap-[14px]'>
-                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot">14 min</h2>
+                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot leading-[100%]">14 min</h2>
                   <div className='size-[22px] flex justify-center items-center'>
                       <Image src={DotMenu} alt="share" />
                   </div>
                 </div>
               </div>
               
-              <h2 className='text-xl font-normal text-white'>Looking forward to the game! What&apos;s the final player count?</h2>
+              <h2 className='text-xl font-normal text-white leading-[100%]'>Looking forward to the game! What&apos;s the final player count?</h2>
             </div>
 
             <div className="py-[2.4px]">
-              <button className="flex gap-2">
+              <button className="flex justify-center items-center gap-2">
                 <div className="size-[26px] flex justify-center items-center">
                   <Image src={ReplyIcon} alt="reply" />
                 </div>
-                <h2 className="text-[18px] font-medium text-[#808080]">Reply</h2>
+                <h2 className="text-[18px] font-medium text-[#808080] leading-[100%]">Reply</h2>
               </button>
             </div>  
           </div>
@@ -135,26 +135,26 @@ export default function CommentsTabComponent() {
                   <div className='size-10 bg-tertiary-light-apricot rounded-full flex justify-center items-center'>
                     <h2 className='uppercase text-[18px] font-bold text-secondary-pure-green leading-6'>AM</h2>
                   </div>
-                  <h1 className='text-2xl font-medium text-tertiary-light-apricot'>Alex Mercer</h1>
+                  <h1 className='text-2xl font-medium text-tertiary-light-apricot leading-[100%]'>Alex Mercer</h1>
                 </div>
                 
                 <div className='flex justify-between items-center gap-[14px]'>
-                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot">14 min</h2>
+                  <h2 className="text-[18px] font-normal text-tertiary-light-apricot leading-[100%]">14 min</h2>
                   <div className='size-[22px] flex justify-center items-center'>
                       <Image src={DotMenu} alt="share" />
                   </div>
                 </div>
               </div>
               
-              <h2 className='text-xl font-normal text-white'>Looking forward to the game! What&apos;s the final player count?</h2>
+              <h2 className='text-xl font-normal text-white leading-[100%]'>Looking forward to the game! What&apos;s the final player count?</h2>
             </div>
 
             <div className="py-[2.4px]">
-              <button className="flex gap-2">
+              <button className="flex justify-center items-center gap-2">
                 <div className="size-[26px] flex justify-center items-center">
                   <Image src={ReplyIcon} alt="reply" />
                 </div>
-                <h2 className="text-[18px] font-medium text-[#808080]">Reply</h2>
+                <h2 className="text-[18px] font-medium text-[#808080] leading-[100%]">Reply</h2>
               </button>
             </div>  
           </div>
@@ -169,18 +169,18 @@ export default function CommentsTabComponent() {
                     <div className='size-10 bg-secondary-pure-green rounded-full flex justify-center items-center'>
                       <h2 className='uppercase text-[18px] font-bold text-tertiary-light-apricot leading-6'>RK</h2>
                     </div>
-                    <h1 className='text-2xl font-medium text-secondary-pure-green'>Rifat Khan</h1>
+                    <h1 className='text-2xl font-medium text-secondary-pure-green leading-[100%]'>Rifat Khan</h1>
                   </div>
                   
                   <div className='flex justify-between items-center gap-[14px]'>
-                    <h2 className="text-[18px] font-normal text-secondary-pure-green">14 min</h2>
+                    <h2 className="text-[18px] font-normal text-secondary-pure-green leading-[100%]">14 min</h2>
                     <div className='size-[22px] flex justify-center items-center' >
                         <Image src={DotMenuGreen} alt="share" />
                     </div>
                   </div>
                 </div>
                 
-                <h2 className='text-xl font-normal text-tertiary-night-black'>got any friends?</h2>
+                <h2 className='text-xl font-normal text-tertiary-night-black leading-[100%]'>got any friends?</h2>
               </div>
             </div>
           </div>
