@@ -51,7 +51,9 @@ export default function FooterCardComp({ image, title, date, startEndTime, locat
                 {/* TEXT CONTENTS */}
                 <div className="flex flex-col h-full justify-between">
                     <div className="flex flex-col gap-1">
-                        <h1 className="text-secondary-pure-green text-2xl font-medium leading-[100%]">{title}</h1>
+                        <div className="h-8 flex justify-start items-center"> 
+                            <h1 className="text-secondary-pure-green text-2xl font-medium leading-[100%] ">{title}</h1>
+                        </div>
                         <div>
                             <div aria-label="date_time" className="flex justify-start">
                                 <div className="flex justify-start items-center gap-[10px]">
