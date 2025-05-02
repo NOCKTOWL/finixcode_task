@@ -33,10 +33,10 @@ export default function Navbar() {
             <div className='flex justify-between gap-2'>
 
                 {/* DATE PICKER INPUT */}
-                <div onClick={handleDatePickerClick} className='relative flex justify-between w-65 h-13 pl-4 pr-2 py-2 border-1 border-tertiary-light-gray rounded-[99px] [box-shadow:0px_3px_8px_rgba(0,0,0,0.1)]'>
-                    <input ref={datePickerRef} id="datepicker" onChange={(e)=>setPickedDate(e.target.value)} value={pickedDate} type="date" className='invisible absolute inset-0 w-[260px] p-4 outline-none pointer-events-none '/>
+                <div onClick={handleDatePickerClick} className='relative flex justify-between w-65 h-13 pl-4 pr-2 py-2 border-1 border-tertiary-light-gray rounded-[99px] [box-shadow:0px_3px_8px_rgba(0,0,0,0.1)] '>
+                    <input ref={datePickerRef} id="datepicker" onChange={(e)=>setPickedDate(e.target.value)} value={pickedDate} type="date" className='opacity-0 absolute inset-0 w-[260px] p-4 outline-none cursor-pointer'/>
                     <label htmlFor="datepicker" className='w-[260px] flex justify-start items-center text-[#6A6A6A] text-sm font-normal leading-[100%] outline-none cursor-pointer'>{pickedDate}</label>
-                    <div className='absolute top-1/2 right-2 -translate-y-1/2 bg-jithbo-green rounded-full p-[7px] hover:brightness-95 transition-all duration-300 ease-in-out pointer-events-none cursor-pointer'>
+                    <div className='z-10 absolute top-1/2 right-2 -translate-y-1/2 bg-jithbo-green rounded-full p-[7px] hover:brightness-95 transition-all duration-300 ease-in-out cursor-pointer'>
                         <Image src={CalendarIcon} alt="Calendar-Icon" className='text-black ' />
                     </div>
                 </div>

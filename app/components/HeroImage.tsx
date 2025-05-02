@@ -8,7 +8,7 @@ function HeroImageContainer() {
     const [activeImageIndex, setActiveImageIndex] = useState(3);
     const images = [HeroImage, '/event2.svg', HeroImage, HeroImage];
     
-    // UNCOMMENT THIS TO ENABLE AUTO-SLIDE WITH AN INTERVAL OF 4 SECONDS
+    // UNCOMMENT THIS TO ENABLE AUTO-SLIDE WITH AN INTERVAL OF 4 SECONDS   
 
     useEffect(() => {
     //     const interval = setInterval(() => {
